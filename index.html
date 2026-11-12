@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RideWise | Smart Cab Management</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#08111f;color:#edf4ff;line-height:1.7}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;border-bottom:1px solid #26364b;position:sticky;top:0;background:#08111f;z-index:10}
+.logo{font-size:25px;font-weight:800;color:#55d6be}
+nav a{color:#c6d4e5;text-decoration:none;margin-left:25px;font-size:14px}
+.hero{padding:100px 9% 85px;background:radial-gradient(ellipse at 80% 20%,#164b5c 0%,#10243a 35%,#08111f 75%)}
+.tag{color:#55d6be;font-weight:bold;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.12;margin:22px 0}
+h1 span{color:#55d6be}
+.hero p{max-width:650px;color:#b8c9dc;font-size:17px}
+.actions{display:flex;gap:15px;flex-wrap:wrap;margin-top:32px}
+.btn{padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;background:#55d6be;color:#08111f}
+.btn.secondary{background:transparent;border:1px solid #61768d;color:white}
+section{padding:75px 9%}
+.section-tag{color:#55d6be;font-size:12px;letter-spacing:2px;font-weight:bold}
+h2{font-size:34px;margin:10px 0 15px}
+.intro{color:#aebed0;max-width:750px;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#111f31;border:1px solid #273950;padding:25px;border-radius:13px}
+.card .number{color:#55d6be;font-size:13px;font-weight:bold}
+.card h3{margin:12px 0 8px;font-size:20px}
+.card p{color:#aebed0;font-size:14px}
+.complexity{display:inline-block;margin-top:16px;padding:5px 10px;background:#193d46;color:#70e4d0;border-radius:5px;font-size:12px}
+.alt{background:#0d1929}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.step{padding:20px;background:#111f31;border-radius:10px;border-left:3px solid #55d6be}
+.step strong{display:block;color:#55d6be;margin-bottom:5px}
+.details{color:#aebed0;font-size:14px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:30px}
+.info div{background:#111f31;padding:22px;border-radius:10px}
+.info strong{font-size:27px;color:#55d6be;display:block}
+.info span{font-size:13px;color:#aebed0}
+.download{text-align:center;background:linear-gradient(120deg,#123b48,#10243a);border:1px solid #28566a;border-radius:16px;padding:45px 20px}
+.download p{color:#c0d0df;margin:12px auto 25px;max-width:600px}
+footer{text-align:center;padding:30px;color:#8193a8;border-top:1px solid #26364b;font-size:13px}
+@media(max-width:650px){nav{padding:15px 5%}nav a{margin-left:10px;font-size:12px}.hero{padding:75px 6%}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">RideWise.</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#architecture">Workflow</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="tag">DAA UNIT II • JAVA SWING PROJECT</div>
+  <h1>Smarter Rides.<br><span>Optimised Routes.</span></h1>
+  <p>
+    RideWise is a Smart Cab Management System that applies
+    Design and Analysis of Algorithms to cab allocation,
+    ride scheduling and shortest-route planning.
+  </p>
+  <div class="actions">
+    <a class="btn" href="RideWise.jar" download>↓ Download RideWise</a>
+    <a class="btn secondary" href="#algorithms">Explore Algorithms →</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-tag">ABOUT THE PROJECT</div>
+  <h2>Making cab management smarter</h2>
+  <p class="intro">
+    Managing cabs, assigning rides and finding efficient routes
+    can be challenging. RideWise uses four important algorithmic
+    techniques to solve these problems through an interactive
+    Java Swing desktop application.
+  </p>
+  <div class="info">
+    <div><strong>4</strong><span>Core Algorithms</span></div>
+    <div><strong>6</strong><span>Sample Cabs</span></div>
+    <div><strong>9</strong><span>City Hubs</span></div>
+    <div><strong>14</strong><span>Road Connections</span></div>
+  </div>
+</section>
+
+<section class="alt" id="algorithms">
+  <div class="section-tag">ALGORITHM MODULES</div>
+  <h2>Four algorithms. One smart system.</h2>
+  <p class="intro">Each module solves a different cab management problem using concepts from DAA Unit II.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="number">01 • DIVIDE AND CONQUER</div>
+      <h3>Closest Pair of Points</h3>
+      <p>Identifies the nearest available cab to a passenger using their coordinate positions.</p>
+      <span class="complexity">O(n log² n)</span>
+    </div>
+    <div class="card">
+      <div class="number">02 • GREEDY ALGORITHM</div>
+      <h3>Job Sequencing</h3>
+      <p>Schedules ride requests within their deadlines to maximise the total reward.</p>
+      <span class="complexity">O(n²)</span>
+    </div>
+    <div class="card">
+      <div class="number">03 • MINIMUM SPANNING TREE</div>
+      <h3>Prim's & Kruskal's</h3>
+      <p>Finds a minimum-cost network connecting all city hubs through road connections.</p>
+      <span class="complexity">Prim: O(E log V)</span>
+    </div>
+    <div class="card">
+      <div class="number">04 • SHORTEST PATH</div>
+      <h3>Dijkstra's Algorithm</h3>
+      <p>Finds the shortest route between city locations using road distances.</p>
+      <span class="complexity">O((V+E) log V)</span>
+    </div>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="section-tag">SYSTEM WORKFLOW</div>
+  <h2>How RideWise works</h2>
+  <p class="intro">The application takes input, processes it using the selected algorithm and displays the result along with algorithm steps.</p>
+  <div class="steps">
+    <div class="step"><strong>01. Input</strong><div class="details">Cab details, ride requests and city locations.</div></div>
+    <div class="step"><strong>02. Selection</strong><div class="details">Choose the required algorithm module.</div></div>
+    <div class="step"><strong>03. Processing</strong><div class="details">Java executes the selected algorithm.</div></div>
+    <div class="step"><strong>04. Results</strong><div class="details">View results, visualisations and algorithm steps.</div></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="download">
+    <div class="section-tag">TRY THE APPLICATION</div>
+    <h2>Experience RideWise</h2>
+    <p>
+      Download the Java desktop application and explore
+      all four algorithm modules. Java 8 or higher is required.
+    </p>
+    <a class="btn" href="RideWise.jar" download>Download RideWise.jar ↓</a>
+    <p style="font-size:12px;margin-top:20px">
+      Run using: java -jar RideWise.jar
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>RideWise — Smart Cab Management System</p>
+  <p>DAA Unit II Case Study | Developed using Java Swing</p>
+</footer>
+
+</body>
+</html>
